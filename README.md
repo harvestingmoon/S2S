@@ -1,22 +1,31 @@
 
 # Faster Speech To Speech:
 
-## Interact with open-source models using just your voice!
+## A very fast way to get S2S models
+
+### How? just abuse APIs (while they are still free)
 
 ## Important: Currently it is still in development, overtime I would increase its feature capabilities and modifications :) <If my school hours permits ?>
 
-
-<Insert Video??> 
 
 A super fast and quick way to implement a speech to speech model using:
 
 ### 1. Groq
 
-### 2. Coqui TTS 
+### 2. Google TTS Service
+
+If you wish to just call Google TTS API just run
+
+```python s2s.py --gtts  ```
+
+
+
+### 3. Coqui TTS (Locally Run & Modifiable!) [Default]
+
 
 ## Simple Pipeline:
 
-Person Talking ===> Groq Whisper ===> Groq Llama-70b-8192 ===> Coqui TTS xTTSv2 
+### Person Talking ===> Groq Whisper ===> Groq Llama-70b-8192 ===> Google TTS Services
 
 
 ## Modifications:
@@ -25,8 +34,30 @@ Person Talking ===> Groq Whisper ===> Groq Llama-70b-8192 ===> Coqui TTS xTTSv2
 
 ## How To Use:
 
+1. Ensure you install the requirements via 
 
-<Insert Video??> 
+    ``` pip install requirements.txt ```
+2. Remember to sign up for Groq Playground and create an API_KEY
+
+3. Run the script 
+
+    ```python s2s.py ``` 
+
+### It goes by a simple CLI interface
+
+Just run ```python s2s.py ``` followed by the following args commands you can try:
+
+
+``` --output file_to_path ``` : To set path for audio
+
+``` --gtts ```: Enables Google TTS Service, else fallsback to Coqui TTS
+
+``` --temperature (insert int) ```: controls creativity of the model
+
+``` --audio (audio_name) ```: Sets name of your microphone 
+
+``` --model (model_name) ```: Set model name (Default is llama3-70b-8192)
+
 
 ## Requirements:
 
