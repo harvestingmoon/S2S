@@ -1,4 +1,14 @@
 
+## TO DO:
+
+☐ Adjust post-processing of the model (so that is easier to process for TTS)
+
+☐ Video Generation ? (Find something that would work) => Lightweight and portable
+
+☐ Update and modify requirements.txt
+
+
+
 # Faster Speech To Speech:
 
 [![Demo Video](https://github.com/harvestingmoon/S2S/blob/master/demo.MOV)]
