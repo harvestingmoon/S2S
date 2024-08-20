@@ -1,6 +1,8 @@
 
 # Faster Speech To Speech:
 
+[![Demo Video](https://github.com/harvestingmoon/S2S/blob/master/demo.MOV)]
+
 ## A very fast way to get S2S models
 
 ### How? just abuse APIs (while they are still free)
